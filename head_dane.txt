@@ -1,0 +1,35 @@
+  F2.Płuco Stopień.sprawności.wg.Zubroda Objawy.ból Objawy.krwioplucie Objawy.duszność
+1     lewe                             1        NIE                TAK             NIE
+2    prawe                             1        NIE                TAK             NIE
+3     lewe                             1        NIE                NIE             NIE
+4    prawe                             1        TAK                NIE             NIE
+5     lewe                             0        NIE                NIE             NIE
+6    prawe                             1        NIE                NIE             NIE
+  Objawy.kaszel Objawy.pogorszenie.sprawności Utrata.wagi Cecha.T Cecha.N Cecha.M Grupa
+1           NIE                           NIE           0       1       1       0   IIA
+2           NIE                           NIE           0       2       1       0   IIB
+3           NIE                           TAK           0       2       0       0    IB
+4           TAK                           NIE           0       2       1       0   IIB
+5           NIE                           NIE           0       3       0       0   IIB
+6           TAK                           TAK           0       3       1       0  IIIA
+  Rozpoznanie.histopatologiczne Drugi.nowotwór Palenie.papierosów
+1          rak płaskonabłonkowy            NIE                TAK
+2                rak gruczołowy            NIE                TAK
+3                rak gruczołowy            NIE                TAK
+4                rak gruczołowy            NIE                TAK
+5           rak wielkokomórkowy            NIE                TAK
+6                rak gruczołowy            NIE                TAK
+  Rzucił.palenie.ile.miesięcy.temu Życie.w.mieście.przemysłowym Przewlekłe.zapalenie.oskrzeli
+1                                0                          NIE                           NIE
+2                             1-60                          NIE                           NIE
+3                                0                          NIE                           NIE
+4                                0                          NIE                           NIE
+5                             1-60                          NIE                           NIE
+6                                0                          NIE                           NIE
+  Astma.oskrzelowa Płeć Wiek Przezyl3lata Wymiar.guza Nowotwory.rodzina Paczkolata
+1              NIE    M   66            1    9.124782                 0         45
+2              NIE    M   53            1   12.072541                 0         60
+3              NIE    M   53            0   10.748282                 0         30
+4              NIE    M   79            1   12.994530                 0         50
+5              NIE    M   66            1    9.769956                 0         30
+6              NIE    K   61            1    9.993100                 0         32
