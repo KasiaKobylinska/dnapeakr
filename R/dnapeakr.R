@@ -35,3 +35,19 @@ mapping <- function(znf_peaks, epsilon=5000) {
   return (result)
 }
 
+read_human_genomic_file <- function(path) {
+  COL_TYPES <- "idddciicccccici"
+  COL_NAMES <- c("sw_score", "perc_div", "perc_del", "perc_ins", "query_sequence",
+                 "pos_query_begin", "pos_query_end", "pos_query_left",
+                 "strand", "matching_repeat", "repeat_class_family",
+                 "pos_repeat_begin", "pos_repeat_end", "pos_repeat_left", "id")
+  result <- readr::read_table2(path, skip=3, col_names=COL_NAMES, col_types=COL_TYPES)
+  return (result)
+}
+
+append_genome_overlaps <- function(znf_peaks, genome_file) {
+
+}
+
+
+

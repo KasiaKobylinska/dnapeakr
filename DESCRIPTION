@@ -11,5 +11,6 @@ Encoding: UTF-8
 LazyData: true
 Imports:
     biomaRt,
-    stringi
+    stringi,
+    readr
 Suggests: testthat

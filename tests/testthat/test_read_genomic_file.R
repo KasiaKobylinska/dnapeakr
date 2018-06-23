@@ -1,0 +1,24 @@
+context("reading genome file")
+library(dnapeakr)
+
+
+test_that("the genomic file in a specific format is read properly", {
+  path_small_hg19 <- file.path("..", "..", "data", "hg19_chr1_first_10million.out")
+  result <- dnapeakr::read_human_genomic_file(path_small_hg19)
+  # first row should be:
+  expect_equal(result[1,]$sw_score, 463)
+  expect_equal(result[1,]$perc_div, 1.3)
+  expect_equal(result[1,]$perc_del, 0.6)
+  expect_equal(result[1,]$perc_ins, 1.7)
+  expect_equal(result[1,]$query_sequence, "chr1")
+  expect_equal(result[1,]$pos_query_begin, 10001)
+  expect_equal(result[1,]$pos_query_end, 10468)
+  expect_equal(result[1,]$pos_query_left, "(249240153)")
+  expect_equal(result[1,]$strand, "+")
+  expect_equal(result[1,]$matching_repeat, "(TAACCC)n")
+  expect_equal(result[1,]$repeat_class_family, "Simple_repeat")
+  expect_equal(result[1,]$pos_repeat_begin, "1")
+  expect_equal(result[1,]$pos_repeat_end, 463)
+  expect_equal(result[1,]$pos_repeat_left, "(0)")
+  expect_equal(result[1,]$id, 1)
+})
