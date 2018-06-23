@@ -8,10 +8,6 @@
 #   Check Package:             'Cmd + Shift + E'
 #   Test Package:              'Cmd + Shift + T'
 
-hello <- function() {
-  print("Hello, world!")
-}
-
 # argument to znf_peaks w postaci tabelki (wczytane uprzednio przez read.table)
 mapping <- function(znf_peaks, epsilon=5000) {
   ensembl <- biomaRt::useMart("ensembl",dataset="hsapiens_gene_ensembl")
@@ -33,6 +29,6 @@ mapping <- function(znf_peaks, epsilon=5000) {
                    data.frame(ensembl_gene_id=NA, chromosome_name=chromosome_id, start_position=st, end_position=en)
                    } else gens[1, ])
   }
-  return (wynik)
+  return (result)
 }
 
