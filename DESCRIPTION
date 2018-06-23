@@ -12,3 +12,4 @@ LazyData: true
 Imports:
     biomaRt,
     stringi
+Suggests: testthat

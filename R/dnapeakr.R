@@ -10,8 +10,11 @@
 
 # argument to znf_peaks w postaci tabelki (wczytane uprzednio przez read.table)
 mapping <- function(znf_peaks, epsilon=5000) {
-  ensembl <- biomaRt::useMart("ensembl",dataset="hsapiens_gene_ensembl")
   result <- c()
+  if (length(znf_peaks) == 0) {
+    return (result)
+  }
+  ensembl <- biomaRt::useMart("ensembl",dataset="hsapiens_gene_ensembl")
   for (i in 1:dim(znf_peaks)[1]){
     # chr id: as numeric
     chromosome_id<-ifelse(
