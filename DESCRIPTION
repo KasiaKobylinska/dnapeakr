@@ -11,6 +11,9 @@ Encoding: UTF-8
 LazyData: true
 Imports:
     biomaRt,
+    GenomicRanges,
     stringi,
-    readr
+    readr,
+    BiocGenerics,
+    IRanges
 Suggests: testthat

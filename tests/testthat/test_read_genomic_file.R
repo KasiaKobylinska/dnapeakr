@@ -1,7 +1,6 @@
 context("reading genome file")
 library(dnapeakr)
 
-
 test_that("the genomic file in a specific format is read properly", {
   path_small_hg19 <- file.path("..", "..", "data", "hg19_chr1_first_10million.out")
   result <- dnapeakr::read_human_genomic_file(path_small_hg19)
